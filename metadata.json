@@ -1,0 +1,6 @@
+{
+  "name": "FormaT - Escola de Skate",
+  "description": "Landing page oficial da FormaT - Escola de Skate e Comunidade em Castelo Branco, Portugal. Aulas particulares, campos de férias, workshops e festas de aniversário.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

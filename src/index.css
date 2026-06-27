@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "DM Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scroll behavior and selection style matching brand colors */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #D4601A;
+  color: #FFFFFF;
+}
+
+/* -------------------------------------------------------------
+   FormaT Brand Animations - Camada 3 - Produção
+   ------------------------------------------------------------- */
+
+/* 1. Entrada de secções - scroll trigger (Fade up) */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 1.2 Cards de serviço em cascata */
+.service-card:nth-child(1) { transition-delay: 0s; }
+.service-card:nth-child(2) { transition-delay: 0.1s; }
+.service-card:nth-child(3) { transition-delay: 0.2s; }
+.service-card:nth-child(4) { transition-delay: 0.3s; }
+
+/* 2.2 Ticker horizontal de palavras */
+.ticker-wrap {
+  overflow: hidden;
+  background: #111111;
+  padding: 16px 0;
+}
+
+.ticker {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 20s linear infinite;
+}
+
+.ticker span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #D4601A;
+  padding-right: 48px;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 3.1 Botões CTA */
+.btn-primary {
+  background: #D4601A;
+  color: #111111;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #A34A12;
+}
+
+/* Botão secundário (contorno) */
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #D4601A;
+  color: #D4601A;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #D4601A;
+  color: #111111;
+}
+
+/* 3.2 Cards de serviço */
+.service-card {
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  /* Subtle interaction instead of border */
+}
+
+/* 5. Acessibilidade - Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .ticker {
+    animation: none !important;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .service-card {
+    transition: none !important;
+  }
+}
+
+
