@@ -22,10 +22,6 @@ export default function WhereWeAre({ settings }: WhereWeAreProps) {
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#D4601A] font-sans">
-                  Localização
-                </span>
-                <div className="h-[1px] w-8 bg-[#D4601A]/40" />
                 <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
                   ONDE ESTAMOS
                 </span>
