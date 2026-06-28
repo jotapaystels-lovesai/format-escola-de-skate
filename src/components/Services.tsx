@@ -53,10 +53,6 @@ export default function Services({ settings }: ServicesProps) {
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#D4601A] font-sans">
-                    01
-                  </span>
-                  <div className="h-[1px] w-8 bg-[#D4601A]/40" />
                   <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
                     AULAS DE SKATE
                   </span>
