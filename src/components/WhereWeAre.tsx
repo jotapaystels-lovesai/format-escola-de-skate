@@ -27,7 +27,7 @@ export default function WhereWeAre({ settings }: WhereWeAreProps) {
                 </span>
                 <div className="h-[1px] w-8 bg-[#D4601A]/40" />
                 <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
-                  ONDE ESTAMOZ
+                  ONDE ESTAMOS
                 </span>
               </div>
               <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-normal sm:tracking-wide uppercase leading-[1.05] text-white">
