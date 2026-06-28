@@ -337,10 +337,6 @@ export default function Services({ settings }: ServicesProps) {
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#D4601A] font-sans">
-                    02
-                  </span>
-                  <div className="h-[1px] w-8 bg-[#D4601A]/40" />
                   <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
                     CAMPOS DE FÉRIAS
                   </span>
@@ -419,11 +415,7 @@ export default function Services({ settings }: ServicesProps) {
             {/* Info Column */}
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#D4601A] font-sans">
-                    03
-                  </span>
-                  <div className="h-[1px] w-8 bg-[#D4601A]/40" />
+                <div className="flex items-center gap-3">    
                   <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
                     WORKSHOPS
                   </span>
@@ -646,10 +638,6 @@ export default function Services({ settings }: ServicesProps) {
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#D4601A] font-sans">
-                    04
-                  </span>
-                  <div className="h-[1px] w-8 bg-[#D4601A]/40" />
                   <span className="text-xs font-medium uppercase tracking-wider text-gray-400 font-sans">
                     FESTAS DE ANIVERSÁRIO
                   </span>
