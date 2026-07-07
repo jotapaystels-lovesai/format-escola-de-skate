@@ -5,8 +5,10 @@ on:
     branches:
       - main   # muda para 'master' se for esse o nome da tua branch principal
 
-jobs:
+obs:
   build-and-deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
@@ -26,5 +28,6 @@ jobs:
       - name: Publicar na branch de deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: build          # nome da branch onde vai ficar o resultado do build
-          folder: dist          # pasta gerada pelo npm run build (usa 'dist' se for Vite)
+          branch: build
+          folder: dist
+        
