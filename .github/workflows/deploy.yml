@@ -27,4 +27,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: build          # nome da branch onde vai ficar o resultado do build
-          folder: build          # pasta gerada pelo npm run build (usa 'dist' se for Vite)
+          folder: dist          # pasta gerada pelo npm run build (usa 'dist' se for Vite)
