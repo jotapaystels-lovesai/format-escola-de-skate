@@ -3,13 +3,13 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main   # muda para 'master' se for esse o nome da tua branch principal
+      - main
 
-obs:
+jobs:
   build-and-deploy:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
@@ -30,4 +30,3 @@ obs:
         with:
           branch: build
           folder: dist
-        
