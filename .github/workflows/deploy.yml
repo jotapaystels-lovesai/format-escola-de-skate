@@ -1,0 +1,30 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main   # muda para 'master' se for esse o nome da tua branch principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Fazer build
+        run: npm run build
+
+      - name: Publicar na branch de deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: build          # nome da branch onde vai ficar o resultado do build
+          folder: build          # pasta gerada pelo npm run build (usa 'dist' se for Vite)
