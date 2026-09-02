@@ -184,7 +184,7 @@ export default function Services({ settings }: ServicesProps) {
                       <div className="text-sm font-bold text-gray-400 uppercase">Aula em Grupo</div>
                       <span className="bg-white/10 text-white text-[9px] font-bold px-1.5 py-0.5 rounded uppercase">Brevemente</span>
                     </div>
-                    <div className="text-[11px] text-gray-500">2 a 4 alunos por sessão</div>
+                    <div className="text-[11px] text-gray-500">Iniciação ao skateboarding em comnunidade</div>
                   </div>
                   <div className="text-sm font-bold text-gray-400 uppercase tracking-wider">
                     Anúncio em Breve
@@ -397,7 +397,7 @@ export default function Services({ settings }: ServicesProps) {
                     <div className="mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#D4601A]/10 text-[#D4601A]">
                       <Check className="h-3.5 w-3.5" />
                     </div>
-                    <span className="text-sm text-gray-300">Grupos de crianças e jovens (dos 6 aos 16 anos) integrados em programas sazonais (Páscoa, Verão, Natal)</span>
+                    <span className="text-sm text-gray-300">Grupos de crianças e jovens (dos 5 aos 16 anos) integrados em programas sazonais (Páscoa, Verão, Natal)</span>
                   </motion.li>
                 </motion.ul>
               </div>
