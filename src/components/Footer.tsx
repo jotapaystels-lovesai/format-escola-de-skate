@@ -12,7 +12,7 @@ export default function Footer({ settings }: FooterProps) {
 
   const whatsappLink = `https://wa.me/${settings.whatsapp}?text=Olá%2C+quero+saber+mais+sobre+a+FormaT.`;
 
-  const emailLink = `mailto:${settings.email}?subject=Contacto%20FormaT%20-%20Escola%20de%20Skate&body=Olá%20FormaT,%0A%0AGostaria%20de%20saber%20mais%20informações%20sobre%20as%20aulas%20de%20skate.`;
+  const emailLink = `mailto:${settings.email}?subject=Contacto%20FormaT%20-%20Escola%20de%20Skate&body=Olá%20FormaT,%0A%0AGostaria%20de%20saber%20mais%20informações%20sobre%20as%20aulas%20de%20[...]
   const instagramLink = `https://instagram.com/${settings.instagram}`;
 
   // Format phone number visually (e.g. +351 968 259 078)
@@ -90,18 +90,19 @@ export default function Footer({ settings }: FooterProps) {
             <ul className="space-y-3 text-sm font-body">
               
               {/* WhatsApp */}
-              <li className="flex items-center gap-3">
+              <li className="flex flex-col gap-2">
                 <a
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 hover:text-[#D4601A] transition-colors group"
+                  className="flex items-center gap-2.5 hover:text-[#D4601A] transition-colors group w-fit"
                 >
                   <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-gray-400 group-hover:bg-[#D4601A]/10 group-hover:text-[#D4601A] transition-colors">
                     <MessageSquare className="h-4 w-4" />
                   </div>
                   <span>{formatPhone(settings.whatsapp)}</span>
                 </a>
+                <span className="text-xs text-gray-500 ml-11">(Custo de chamada para a rede fixa nacional.)</span>
               </li>
 
               {/* Email */}
