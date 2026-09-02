@@ -102,7 +102,7 @@ export default function Footer({ settings }: FooterProps) {
                   </div>
                   <span>{formatPhone(settings.whatsapp)}</span>
                 </a>
-                <span className="text-xs text-gray-500 ml-11">(Custo de chamada para a rede fixa nacional.)</span>
+                <span className="text-xs text-gray-500 ml-11">(Custo de chamada para a rede fixa nacional)</span>
               </li>
 
               {/* Email */}
