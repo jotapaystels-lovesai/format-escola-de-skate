@@ -680,7 +680,7 @@ export default function Services({ settings }: ServicesProps) {
                     <div className="mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#D4601A]/10 text-[#D4601A]">
                       <Check className="h-3.5 w-3.5" />
                     </div>
-                    <span className="text-sm text-gray-300">Crianças e jovens dos 6 aos 16 anos</span>
+                    <span className="text-sm text-gray-300">Crianças e jovens dos 5 aos 16 anos</span>
                   </motion.li>
                   <motion.li
                     variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0, transition: { duration: 0.4 } } }}
