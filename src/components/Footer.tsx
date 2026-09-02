@@ -12,7 +12,7 @@ export default function Footer({ settings }: FooterProps) {
 
   const whatsappLink = `https://wa.me/${settings.whatsapp}?text=Olá%2C+quero+saber+mais+sobre+a+FormaT.`;
 
-  const emailLink =   const emailLink = `mailto:${settings.email}?subject=Contacto%20FormaT%20-%20Escola%20de%20Skate&body=Olá%20FormaT,%0A%0AGostaria%20de%20saber%20mais%20informações%20sobre%20as%20aulas%20de%20skate.`;
+  const emailLink = `mailto:${settings.email}?subject=Contacto%20FormaT%20-%20Escola%20de%20Skate&body=Olá%20FormaT,%0A%0AGostaria%20de%20saber%20mais%20informações%20sobre%20as%20aulas%20de%20skate.`;
   const instagramLink = `https://instagram.com/${settings.instagram}`;
 
   // Format phone number visually (e.g. +351 968 259 078)
