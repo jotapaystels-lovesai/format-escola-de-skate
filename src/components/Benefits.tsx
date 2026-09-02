@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { Activity, Target, ShieldCheck, Brain, Focus, Trophy, Users, Compass, ChevronDown } from "lucide-react";
 
 const benefitsData = [
